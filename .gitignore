@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.uv/
+
+# Flutter
+summative/FlutterApp/.dart_tool/
+summative/FlutterApp/.flutter-plugins
+summative/FlutterApp/.flutter-plugins-dependencies
+summative/FlutterApp/build/
+summative/FlutterApp/.idea/
+summative/FlutterApp/*.iml
+
+# OS
+.DS_Store
+
+# Notebook checkpoints
+.ipynb_checkpoints/
