@@ -209,7 +209,7 @@ uvicorn prediction:app --reload
 
 ## Video Demo
 
-📺 *(add my ≤7-minute YouTube link here once recorded)*
+https://youtu.be/LNhxQ7wpNls)
 
 ## Notebook Reproducibility Notes
 
