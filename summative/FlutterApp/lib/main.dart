@@ -47,7 +47,7 @@ class _PredictorPageState extends State<PredictorPage> {
   //   iOS simulator / web -> http://127.0.0.1:8000/predict
   //   physical device -> http://<your-computer-LAN-ip>:8000/predict
   // ---------------------------------------------------------------------
-  static const String apiBaseUrl = "https://maternal-risk-api.onrender.com";
+  static const String apiBaseUrl = "https://maternal-risk-api-h32c.onrender.com";
   static const String predictPath = "/predict";
 
   final _formKey = GlobalKey<FormState>();
@@ -122,7 +122,7 @@ class _PredictorPageState extends State<PredictorPage> {
             headers: {"Content-Type": "application/json"},
             body: jsonEncode(payload),
           )
-          .timeout(const Duration(seconds: 20));
+          .timeout(const Duration(seconds: 60));
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body) as Map<String, dynamic>;
